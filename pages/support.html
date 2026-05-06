@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تقييم المخاطر</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    color:#fff;
+}
+
+/* خلفية متحركة */
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:linear-gradient(270deg,#001f3f,#0074D9,#001f3f);
+    background-size:600% 600%;
+    animation:bg 10s infinite;
+    z-index:-1;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* الحاوية */
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:90vh;
+}
+
+/* مربع التحميل */
+.download-box{
+    cursor:pointer;
+    padding:30px 50px;
+    border-radius:20px;
+    background:rgba(0,150,255,0.2);
+    border:2px solid #00aaff;
+    box-shadow:0 0 20px #00aaff;
+    font-size:20px;
+    transition:0.3s;
+}
+
+/* Hover */
+.download-box:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 40px #00aaff;
+}
+
+/* رجوع */
+.back{
+    text-align:center;
+    margin-top:20px;
+}
+
+.back a{
+    color:#00aaff;
+    text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- زر تحميل مباشر -->
+<div class="download-box" onclick="downloadFile('https://drive.usercontent.google.com/download?id=1mfUWDwXXRbkX1wPo_nsy_-P7kcpOgwyv&export=download&authuser=0&confirm=t&uuid=a60c1f5c-59a0-4645-901c-fc5251a8c584&at=ALBwUgmTdGWnqEbr5rA_NDHHWf2o:1777836402160')">
+تحميل ملف تقييم المخاطر
+</div>
+
+</div>
+
+<div class="back">
+<a href="../index.html">⬅ رجوع للرئيسية</a>
+</div>
+
+<script>
+
+/* تحميل مباشر بدون فتح */
+function downloadFile(url){
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'file.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
+</script>
+
+</body>
+</html>

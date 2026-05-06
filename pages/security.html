@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>التصاريح</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Tahoma, Arial, sans-serif;
+    color:#fff;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;   /* توسيط عمودي */
+    align-items:center;       /* توسيط أفقي */
+    height:100vh;
+}
+
+/* خلفية */
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:linear-gradient(270deg,#001f3f,#0074D9,#001f3f);
+    background-size:600% 600%;
+    animation:bg 10s infinite;
+    z-index:-1;
+}
+
+@keyframes bg{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* الشبكة */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(5, 110px);
+    gap:25px;
+    justify-content:center;
+    align-content:center;
+}
+
+/* العنصر */
+.item{
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+}
+
+/* الدائرة */
+.circle{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(0,150,255,0.2);
+    border:2px solid #00aaff;
+    box-shadow:0 0 15px #00aaff;
+    animation:pulse 2s infinite;
+    transition:0.3s;
+}
+
+@keyframes pulse{
+    0%{transform:scale(1);}
+    50%{transform:scale(1.1);}
+    100%{transform:scale(1);}
+}
+
+.circle:hover{
+    transform:scale(1.2);
+    box-shadow:0 0 35px #00aaff;
+}
+
+.item span{
+    display:block;
+    margin-top:8px;
+    font-size:14px;
+    font-weight:600;
+}
+
+/* الجوال */
+@media(max-width:768px){
+    .grid{
+        grid-template-columns:repeat(2, 110px);
+        gap:20px;
+    }
+}
+
+/* رجوع */
+.back{
+    position:fixed;
+    bottom:15px;
+}
+
+.back a{
+    color:#00aaff;
+    text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+
+<a href="https://drive.usercontent.google.com/download?id=1bJXNo-qBt0DMQhT62462nfFVdAzUyyzu&export=download&authuser=0&confirm=t&uuid=2545b66f-45fb-4a51-ab3f-2eefaac4a329&at=ALBwUgng0o3wfl78QHyJhDplj8Ue:1777837209971" class="item"><div class="circle">WAH</div><span></span></a>
+<a href="https://drive.usercontent.google.com/download?id=1wB6_N3A1hBNaHXOPUeW5hSk75ptct3nh&export=download&authuser=0&confirm=t&uuid=d4912928-dce5-461a-b98a-9c287adb2fc4&at=ALBwUgnQ91Ce_CLQt_FLrva8zXyF:1777837341665" class="item"><div class="circle">STW</div><span></span></a>
+<a href="https://drive.usercontent.google.com/download?id=1OoUA3lwqtiA6usB_m0M2kT-9LuOolInf&export=download&authuser=0&confirm=t&uuid=d4cac27a-f953-413c-ad37-1f6537689f8e&at=ALBwUgkbv6_4rfD3DW6sXYuE5UgX:1777837269228" class="item"><div class="circle">LOA</div><span></span></a>
+<a href="https://drive.usercontent.google.com/download?id=1Lk1eh2ZUyPD4InJPswbT9dBq1XeGk7ym&export=download&authuser=0&confirm=t&uuid=1bd5f1ad-e12a-4f5e-bc16-10ac5aa47455&at=ALBwUgk5FAessTmSueSiCQyvkeNE:1777837273995" class="item"><div class="circle">SFT</div><span></span></a>
+<a href="https://drive.usercontent.google.com/download?id=18YTtrlRHo-1aC_UU4VMPgBo-cpvv9KRi&export=download&authuser=0&confirm=t&uuid=0f655937-65a0-4b55-bd10-2ad56d4c6013&at=ALBwUgnc-wCxPXnAdiYQRjoiKhfn:1777837272779" class="item"><div class="circle">PEA</div><span></span></a>
+<a href="https://drive.usercontent.google.com/download?id=1OoUA3lwqtiA6usB_m0M2kT-9LuOolInf&export=download&authuser=0&confirm=t&uuid=d4cac27a-f953-413c-ad37-1f6537689f8e&at=ALBwUgkbv6_4rfD3DW6sXYuE5UgX:1777837269228" class="item"><div class="circle">LOP</div><span></span></a>
+<a href="https://drive.usercontent.google.com/download?id=1mAlZ1Qg3JzqViBskdbzzt6IQGun02U1f&export=download&authuser=0&confirm=t&uuid=cc6f96aa-2971-4ffe-b9dd-0c8feed9e204&at=ALBwUgl8UWjf3KP5M9lwee3kDU0L:1777837267114" class="item"><div class="circle">IER</div><span></span></a>
+<a href="https://drive.usercontent.google.com/download?id=1iZaiXCqNDNGDYZj5XQy1ApOjCzrSWb04&export=download&authuser=0&confirm=t&uuid=3484d44a-cfdb-438c-8324-080153c84ec9&at=ALBwUglZGhosc10S7hZ-KvZxghmH:1777837264468" class="item"><div class="circle">HLW</div><span></span></a>
+<a href="https://drive.usercontent.google.com/download?id=1mnIeMAMGKJM1y8FsdlU0f_iIq0DRbE4z&export=download&authuser=0&confirm=t&uuid=574ef5f4-a0a2-47e2-8b83-d01f626492fe&at=ALBwUgkPsbUWb0k-uLNUepTz7drZ:1777837262230" class="item"><div class="circle">EXC</div><span></span></a>
+<a href="https://drive.usercontent.google.com/download?id=1cgI4GYP4yNNjVDueVr0346bFv7UKI5IY&export=download&authuser=0&confirm=t&uuid=3eaef793-017a-41a2-ae89-2d82b12fb6c9&at=ALBwUgnTGJthTfzG-ZitlQRsDqMG:1777837259155" class="item"><div class="circle">CSE</div><span></span></a>
+
+</div>
+
+<div class="back">
+<a href="../index.html">⬅ رجوع للرئيسية</a>
+</div>
+
+</body>
+</html>

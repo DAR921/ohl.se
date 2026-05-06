@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>اجراءات العمل</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Tahoma, Arial, sans-serif;
+    color:#fff;
+}
+
+/* خلفية طاقة */
+body::before{
+    content:"";
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:linear-gradient(270deg,#001f3f,#0074D9,#001f3f);
+    background-size:600% 600%;
+    animation:energy 10s ease infinite;
+    z-index:-1;
+}
+
+@keyframes energy{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* الشبكة */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+/* المربعات */
+.box{
+    text-align:center;
+    cursor:pointer;
+    padding:20px;
+    border-radius:15px;
+    background:rgba(0,150,255,0.15);
+    border:2px solid rgba(0,150,255,0.5);
+    transition:0.3s;
+    animation:float 3s infinite ease-in-out;
+    text-decoration:none;
+    color:#fff;
+}
+
+@keyframes float{
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-10px);}
+    100%{transform:translateY(0);}
+}
+
+/* تأثير Hover */
+.box:hover{
+    transform:scale(1.1);
+    box-shadow:0 0 25px #00aaff;
+}
+
+/* النص */
+.box span{
+    display:block;
+    font-size:15px;
+    line-height:1.6;
+    font-weight:600;
+    letter-spacing:0.3px;
+}
+
+/* تحسين الجوال */
+@media (max-width:768px){
+    .box span{
+        font-size:16px;
+        line-height:1.7;
+    }
+
+    .grid{
+        padding:20px;
+        gap:15px;
+    }
+
+    .box{
+        padding:15px;
+    }
+}
+
+/* زر الرجوع */
+.back{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.back a{
+    color:#00aaff;
+    text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="grid">
+
+<a href="https://drive.usercontent.google.com/download?id=1agveL-crURM9DHMXbCbcWowD24VvXrrU&export=download&authuser=0&confirm=t&uuid=9527cc5f-9ce4-486c-9093-5b5645638f47&at=ALBwUgnsaUDVV-BCwwbsiNSuDhJJ:1777849988689" download class="box"><span>استبدال معدة في منطقة الخروج النهاية الطرفية لخطوط النقل</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1HSlHEywmkkGUAB89iumI8qzbeMJTUxq2&export=download&authuser=0&confirm=t&uuid=990496f4-2f8b-4e7b-9132-8885e72dbae7&at=ALBwUglcAc-qF476ikcFK90gfESv:1777849966887" download class="box"><span>دهان عازلات الابراج وعازلات منطقة الخروج</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1IaP6qEIusXLdOejQcT6P7r6Nivo5Mn2v&export=download&authuser=0&confirm=t&uuid=f6292e73-df53-439e-a2be-09fc637c12d0&at=ALBwUgmu4p-yduD_3gY2tSXIs7t8:1777849995712" download class="box"><span>استبدال الموصلات وال OPGW على ابراج خطوط النقل</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1i52mz0pkjCzLerWWyDwHqnMCk6lyYtlm&export=download&authuser=0&confirm=t&uuid=6fda02b2-ce0c-4369-8260-d8d5f9e4f6e0&at=ALBwUgl5i7EaJHlmBkXk1JGVKrJY:1777850000736" download class="box"><span>تشغيل وفحص شاحنة الطوارئ فحص المولدات والنظام الكهربائي</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1TjICPAsQqA0ks15CgHW8ndWh_KKSOQn-&export=download&authuser=0&confirm=t&uuid=46ebb8c4-c9dd-4d54-ac54-12d72bdf5fdc&at=ALBwUglb7Bkeh-vRPIwa_3Xsb1t_:1777849998206" download class="box"><span>الفحص بالكاميرا الحرارية والكرونا لمرابط أبراج الزاوية والنهايات الطرفية</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=167_Z1qgHSgJQ3gL07eGFYRCA0YggFpd5&export=download&authuser=0&confirm=t&uuid=84f63368-5245-49ed-b73f-2ad408d633b3&at=ALBwUglFYrX4eogw9v3jxuhb21bx:1777849979914" download class="box"><span>استبدال وصيانة لوحات ترقيم الأبراج</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=18PJk3ClZWeKKV4SgI9SqNQHQyUCwN2cb&export=download&authuser=0&confirm=t&uuid=9b3dd27a-6348-4e0d-9140-df2aa6ab5b59&at=ALBwUglGvSD_gwaHbBgxsqvONdIe:1777850004734" download class="box"><span>استبدال وصيانة العلامات التحذيرية والكرات التحذيرية وإشارات الأبراج</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1zVwCkms-yluuES0UFrkg4EoGEEfAUSGj&export=download&authuser=0&confirm=t&uuid=cca09dfb-172e-46fa-933a-fef47b04dca0&at=ALBwUgk2qpUyldICO8thJv9mIMCd:1777849972892" download class="box"><span>قص الأشجار يدوياً أو بالمنشار الكهربائي</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1P1-yHtd8W8AoFDXSo4TPGIlPuLQaNMeC&export=download&authuser=0&confirm=t&uuid=513ef873-358e-4739-be2c-375e998137b7&at=ALBwUgkmiTgfibEK9M6rK9GwHc4B:1777850003426" download class="box"><span>تحميل وتنزيل المواد على شاحنة نقل بواسطة الكرين</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1wONYHM-_08Q-3dUxU8PhvF4DCtBuZSnA&export=download&authuser=0&confirm=t&uuid=c3246bf7-bfbe-4381-85c7-31458f551d2c&at=ALBwUgmLJqHACauqsYrG8gaRgItW:1777849965001" download class="box"><span>تركيب أو استبدال ملحقات موصلات خط النقل</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1vaJCioMcufsGMNysXvFleH7PGsOB4UGy&export=download&authuser=0&confirm=t&uuid=0786fa4b-488e-4525-b5cc-3707330c05cc&at=ALBwUgk4GtGp3pk4Wgf5GqEl53oJ:1777849971296" download class="box"><span>قياس المقاومة وتدعيم أرضي الأبراج</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1d1Z7g7qIk8c5jH2uKmbc7wZOAi_YjwYd&export=download&authuser=0&confirm=t&uuid=a8768185-563d-4469-a9f2-9f0e0544a946&at=ALBwUgkjjOIYa8IZNCD-EIB4Gvqz:1777849958207" download class="box"><span>استبدال مجموعة العازل بواسطة التسلق</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1iX_D0pTNuGhV8_jLJOUHPoVMxnP6isIG&export=download&authuser=0&confirm=t&uuid=8aac7678-a855-4911-8151-58da259f2752&at=ALBwUgkzpkpESkOzWOcckdQx6TIt:1777849984561" download class="box"><span>إزالة جسم غريب من موصلات دائرة معزولة</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1OSBNVTLRg0_PJ2HwC8u0LIukaz7lSovt&export=download&authuser=0&confirm=t&uuid=3f020b67-af78-4bbe-8ab9-1a64b053478d&at=ALBwUglOKEOhS4B7mnBTXL8vwxiw:1777849999530" download class="box"><span>تشغيل وفحص السلة</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1ca-b4jWwmiiTmUGbLo_Ut7JyJxzXGTem&export=download&authuser=0&confirm=t&uuid=7dd0aa60-0c82-452c-8c92-488a42f55a5f&at=ALBwUgm-MIU4IoIWImAzZQJG7X6L:1777849975691" download class="box"><span>صيانة أجزاء الأبراج الحديدية</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1ROJlwCLLDpBYN98c3HoNqdvuewDo18T0&export=download&authuser=0&confirm=t&uuid=f1386ab2-ee1b-4048-b60f-2d1816352a44&at=ALBwUgnly_CWrVHmvFYBtCqfqEz2:1777850002112" download class="box"><span>الفحص الدوري للمكائن والأدوات</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1mOxXzA_W8WpBHWBfzyp_pHpAwEmqwBJB&export=download&authuser=0&confirm=t&uuid=753df52d-dc4c-4651-8f06-d4f6e71a0837&at=ALBwUglx5uHdpIhGrCzHTGsi_Kav:1777850005798" download class="box"><span>إصلاح قطع جزئي أو كلي على موصل خط النقل</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1_-yl2p7e-xYQEzfkcAAD8SNiziJR8YRZ&export=download&authuser=0&confirm=t&uuid=3bcd0453-731e-4efa-874b-4e6e14d54aa8&at=ALBwUglvGvDgIyn0YomSAhZgCCSD:1777849954375" download class="box"><span>تفتيش أبراج خطوط النقل من الأسفل</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1bJO8kSu99aHv9rRd_Exko-gxtYKEYZGv&export=download&authuser=0&confirm=t&uuid=d36f0716-bea8-497c-a196-cca906d404e8&at=ALBwUgnxX_AFFIjoyHQ0dzhrgEaP:1777850007395" download class="box"><span>تركيب أبراج الطوارئ</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1HHzcqaXDKKQT8oDKbHAFGgrkhwECaYR_&export=download&authuser=0&confirm=t&uuid=8ae4c6d7-5d87-4b91-84ef-8a0714fa19da&at=ALBwUgmu9xLRTZ4Jj4W-bXwGcCxM:1777850008664" download class="box"><span>تركيب الأرضي المتنقل</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1gazmmxX1vuoBDEE-0qqKcm3ohoJWE0e6&export=download&authuser=0&confirm=t&uuid=36bf96dc-1aa4-4904-8715-09f858ad9f8d&at=ALBwUgkfGDAqE6jRJy-7PiS8EbuL:1777849977942" download class="box"><span>ربط المحطات المتنقلة</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1dYZqOpkhmjbkvJTCtAwshpWHbv6i9xFN&export=download&authuser=0&confirm=t&uuid=3682f08d-e9a1-474d-ad64-e8f1599c42e7&at=ALBwUgkDWFs-Nbn9JfWCDZvW0o_j:1777849956828" download class="box"><span>تفتيش منطقة الخروج</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1WZkgdQ4xLWBDyQHJSn_IQ6oNs_qbglog&export=download&authuser=0&confirm=t&uuid=6f1f3cd4-e492-4e95-ba74-cfe4f330fe04&at=ALBwUgmzlQiisJBxjYik7zYIw7DB:1777850631564" download class="box"><span>تركيب الجنابر لدائرة معزولة</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=15eGNJvOkJ5XSsv3XTasEUI7Gd1lC-8-K&export=download&authuser=0&confirm=t&uuid=bcbbaf5b-b219-4635-8230-a0956b037399&at=ALBwUglw9HnGLjzJGr5YmKpVoc2F:1777849955599" download class="box"><span>تفتيش أبراج خطوط النقل بالتسلق</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1hQY8_hUf1Ifn8s6XvD5p4CBk-K5D1afR&export=download&authuser=0&confirm=t&uuid=698580c0-836f-4b0a-ade0-7a315b9676ee&at=ALBwUgnHwSgpjutNfD5fSqZGHqis:1777850738294" download class="box"><span>استبدال العوازل بواسطة السلة</span></a>
+
+<a href="https://drive.usercontent.google.com/download?id=1syf2hNZnoPoWFnofJOKkYOsYWUE5OTMo&export=download&authuser=0&confirm=t&uuid=66100d76-d7bd-4672-9696-f1942f7bc64a&at=ALBwUgk9wrJ0k24wfj0SmWOUTlPy:1777849969381" download class="box"><span>غسيل يدوي لعوازل الأبراج</span></a>
+
+</div>
+
+<div class="back">
+<a href="../index.html">⬅ رجوع للرئيسية</a>
+</div>
+
+</body>
+</html>
